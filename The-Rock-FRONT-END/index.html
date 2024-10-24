@@ -9,6 +9,8 @@
     <meta name="author" content="Rodrigo Padilha">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
+    <!-- Inclui o arquivo script.js -->
+    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -16,65 +18,50 @@
         <img src="logotipo.png" alt="Universidade Anhembi Morumbi" class="logotipo">
         <div class="bem-vindo">BEM-VINDO!</div>
         <p class="subtitulo">Você está em um ambiente seguro para <strong>acessar a internet gratuitamente por 15 minutos.</strong></p>
-        <script defer>
-            function verificarTermos(event) {
-                var termosCheckbox = document.getElementById('termos');
-                var errorMessage = document.getElementById('termos-error');
-                
-                if (!termosCheckbox.checked) {
-                    errorMessage.style.display = 'block'; 
-                    event.preventDefault(); 
-                } else {
-                    errorMessage.style.display = 'none';  
-                    window.location.href = 'https://bit.ly/4dXyV9x'; 
-                }
-            }
-        </script>
     </header>
 
     <div class="container">
-        
-
         <section class="form-section">
             <h2>CADASTRO</h2>
-            <form>
+            <form id="cadastro-form">
                 <div class="input-group">
                     <label for="nome"><strong>NOME*</strong></label>
                     <input type="text" id="nome" name="nome" required>
+                    <span class="error-message" style="display:none;"></span>
                 </div>
 
                 <div class="input-group">
                     <label for="email"><strong>E-MAIL*</strong></label>
                     <input type="email" id="email" name="email" required>
+                    <span class="error-message" style="display:none;"></span>
                 </div>
 
                 <div class="input-group">
                     <label for="celular"><strong>CELULAR*</strong></label>
                     <input type="text" id="celular" name="celular" required>
+                    <span class="error-message" style="display:none;"></span>
                 </div>
 
                 <div class="input-group">
                     <label for="estado"><strong>ESTADO*</strong></label>
                     <input type="text" id="estado" name="estado" required>
+                    <span class="error-message" style="display:none;"></span>
                 </div>
 
                 <div class="input-group">
                     <label for="cidade"><strong>CIDADE*</strong></label>
                     <input type="text" id="cidade" name="cidade" required>
+                    <span class="error-message" style="display:none;"></span>
                 </div>
 
                 <div class="input-group">
                     <label for="profissao"><strong>PROFISSÃO*</strong></label>
                     <input type="text" id="profissao" name="profissao" required>
+                    <span class="error-message" style="display:none;"></span>
                 </div>
 
-                <!-- <div class="checkbox-group">
-                    <input type="checkbox" id="termos" name="termos" required>
-                    <label for="termos">Autorizo ser contactado pela Ânima Educação.</label>
-                </div> -->
-
                 <div class="checkbox-group">
-                    <input type="checkbox" id="termos" name="termos">
+                    <input type="checkbox" id="termos" name="termos" required>
                     <label for="termos">Autorizo ser contactado pela Ânima Educação.<span class="required">*</span></label>
                     <span id="termos-error" class="error-message" style="display: none;">Você precisa aceitar os termos antes de prosseguir.</span>
                 </div>
@@ -93,7 +80,6 @@
             </form>
         </section>
     </div>
-
 
     <img src="rodape.png" class="rodape" alt="Rodapé da página de formulário">
 
