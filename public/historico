@@ -1,0 +1,82 @@
+    1  apt-get install -y mysql-server
+    2  ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '';
+    3  which mysql
+    4  systemctl apache2 restart
+    5  systemctl restart apache2
+    6  ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '';
+    7  mysql
+    8  apt-get install -y phpmyadmin
+    9  systemctl restart apache2
+   10  cat /var/log/apache2/error.log 
+   11  cd /etc/apache2/sites-available/
+   12  ls
+   13  vim hotspot.conf 
+   14  systemctl restart apacha2
+   15  systemctl restart apache2
+   16  cat /var/log/apache2/error.log 
+   17  ls
+   18  vim hotspot.conf 
+   19  cd..
+   20  ls
+   21  cd ..
+   22  ls
+   23  cd sites-enabled/
+   24  ls
+   25  vim hotspot.conf 
+   26  cd ..
+   27  ls
+   28  cd ..
+   29  ls
+   30  cd /var/www/hotspot/
+   31  ls
+   32  ls -a
+   33  vim .env
+   34  cat /var/log/apache2/error.log 
+   35  ls
+   36  cd public/
+   37  ls
+   38  composer install
+   39  apt install composer
+   40  ls
+   41  ls -a
+   42  systemctl restart apache2
+   43  cd sites-enabled/
+   44  cd /etc/apache2/sites-enabled/hotspot.conf 
+   45  vim /etc/apache2/sites-enabled/hotspot.conf 
+   46  systemctl restart apache2
+   47  cat /var/log/apache2/error.log 
+   48  cd ..
+   49  ls
+   50  ls -a
+   51  which composer
+   52  ls
+   53  cd public/
+   54  ls
+   55  composer install composer.json 
+   56  exit
+   57  vim connect.php 
+   58  more header.php 
+   59  more index.php 
+   60  clear
+   61  ls
+   62  rm saida.txt 
+   63  rm teste.php 
+   64  ls
+   65  clear
+   66  ls
+   67  more config.php 
+   68  clear
+   69  ls
+   70  more index.php 
+   71  clear
+   72  ls
+   73  more welcome.php 
+   74  ls
+   75  more connect.php 
+   76  vim connect.php 
+   77  systemctl restart apache2
+   78  vim connect.php 
+   79  more connect.php 
+   80  history
+   81  history | grep "source"
+   82  history > historico.txt
