@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <meta name="description" content="Formulário de autenticação.">
+    <meta name="author" content="Suporte One">
+    <meta name="author" content="Rodrigo Padilha">
+    <link rel="icon" href="/icon/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <img src="/css/logotipo.png" alt="Universidade Anhembi Morumbi" class="logotipo">
+        <div class="bem-vindo">BEM-VINDO!</div>
+        <p class="subtitulo">Você está em um ambiente seguro para <strong>acessar a internet gratuitamente por 15 minutos.</strong></p>
+    </header>
+
+    <div class="container">
+        <section class="form-section">
+            <h2>CADASTRO</h2>
+            <form id="cadastro-form">
+                <div class="input-group">
+                    <label for="nome"><strong>NOME*</strong></label>
+                    <input type="text" id="nome" name="nome" required>
+                    <span class="error-message" style="display:none;"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="email"><strong>E-MAIL*</strong></label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" style="display:none;"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="celular"><strong>CELULAR*</strong></label>
+                    <input type="text" id="celular" name="celular" required>
+                    <span class="error-message" style="display:none;"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="estado"><strong>ESTADO*</strong></label>
+                    <input type="text" id="estado" name="estado" required>
+                    <span class="error-message" style="display:none;"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="cidade"><strong>CIDADE*</strong></label>
+                    <input type="text" id="cidade" name="cidade" required>
+                    <span class="error-message" style="display:none;"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="profissao"><strong>PROFISSÃO*</strong></label>
+                    <input type="text" id="profissao" name="profissao" required>
+                    <span class="error-message" style="display:none;"></span>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    <label for="termos">Autorizo ser contactado pela Ânima Educação.<span class="required">*</span></label>
+                    <span id="termos-error" class="error-message" style="display: none;">Você precisa aceitar os termos antes de prosseguir.</span>
+                </div>
+
+                <div class="disclaimer">
+                    <p class="texto-info">
+                        Ao acessar a rede de internet disponibilizada pela Ânima Educação, o usuário consente com a captura e o armazenamento de seus dados de navegação para 
+                        fins de monitoramento de segurança e aprimoramento dos serviços. Esses dados poderão ser utilizados pela Ânima Educação e suas marcas associadas para o envio de ofertas
+                        personalizadas, de acordo com as preferências e o comportamento de navegação do usuário. Garantimos o tratamento dessas informações em conformidade com a legislação vigente, incluindo a Lei Geral de Proteção de Dados (LGPD), assegurando a privacidade e a segurança dos dados coletados.      
+                    </p>
+                </div>
+                <br>
+
+                <button type="submit" class="btn-cadastrar">CADASTRAR</button>
+                <button type="button" class="btn-ja-cadastrado" onclick="verificarTermos(event)">JÁ SOU CADASTRADO</button>
+            </form>
+        </section>
+    </div>
+
+    <img src="/css/rodape.png" class="rodape" alt="Rodapé da página de formulário">
+
+</body>
+</html>
